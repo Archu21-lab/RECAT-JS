@@ -15,7 +15,7 @@ const todos=[
 ]
 
 
-const  Todos=()=>{
+const  Todo = ()=>{
     return <>
         {
             todos.map((todo)=><div><p>{todo.title}</p></div>
@@ -25,4 +25,4 @@ const  Todos=()=>{
     </>
 }
 
-export default Todos;
+export default Todo;
