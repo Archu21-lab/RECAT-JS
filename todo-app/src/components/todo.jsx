@@ -52,8 +52,13 @@ const Todo = () => {
 
           <div className="">
             {todos.map((todo, i) => (
-              <div key={i} className="">
-                <p className="container">{todo.title}</p>
+              <div key={i} className="container d-flex">
+                <p className="container m-2 bg-info p-2 rounded">{todo.title}</p>
+                <button onClick={()=>{
+                  const temp =[...todos]
+                  temp.splice(i,1)
+                  setTodos(temp);
+                }} className="btn btn-danger m-2">Remove</button>
               </div>
             ))}
           </div>
