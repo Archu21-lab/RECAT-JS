@@ -50,7 +50,7 @@ const Todo = () => {
             </button>
           </div>
 
-          <div className="">
+          <div className="container m-2">
             {todos.map((todo, i) => (
               <div key={i} className="container d-flex">
                 <p className="container m-2 bg-info p-2 rounded">{todo.title}</p>
