@@ -13,11 +13,24 @@
 //     title: "Box Cricket",
 //   },
 // ];
-import { useState } from "react";
+import { useState, useEffect } from "react";
 const Todo = () => {
   const [todos, setTodos] = useState([{ title: "Singing At 5AM" }]);
   const [title, setTitle] = useState("");
   const [hide, setHide] = useState(true);
+  const [index, setIndex] = useState(0);
+
+  const setIntoLS = (data) => {
+    localStorage.setItem("todos", JSON.stringify(data));
+  };
+
+  const getFromLS = () => {
+    setTodos(JSON.parse(localStorage.getItem("todos")) || []);
+  };
+
+  useEffect(() => {
+    getFromLS();
+  }, []);
 
   return (
     <>
@@ -46,7 +59,11 @@ const Todo = () => {
 
             <button
               onClick={() => {
-                setHide(true);
+                const temp = [...todos];
+                temp[index].title = title;
+                setTodos(temp); //setTodos mein temp variable me ki gy process re - render krne k liye
+                setHide(true); //value ko hide krne k liye
+                setTitle(""); //input me value update ki hai usko khali krne k liye
               }}
               className={`btn btn-warning ms-3 ${hide ? "d-none" : ""}`}
             >
@@ -54,7 +71,11 @@ const Todo = () => {
             </button>
             <button
               onClick={() => {
-                setTodos([...todos, { title }]);
+                const temp = [...todos];
+                temp.push({ title });
+                setTodos(temp);
+                //setTodos([...todos, { title }]);
+                setIntoLS(temp);
               }}
               className={
                 "btn btn-primary mx-3 " + (title === "" ? "disabled" : "")
@@ -84,6 +105,7 @@ const Todo = () => {
                   onClick={() => {
                     setTitle(todos[i].title);
                     setHide(false);
+                    setIndex(i);
                   }}
                   className="btn btn-warning m-2"
                 >
