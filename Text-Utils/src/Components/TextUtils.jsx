@@ -25,7 +25,7 @@ export default function TextUtils() {
         <ul>
           <li>Total Length:{text.length}</li>
           <li>Total Words:{text.split(" ").length}</li>
-          <li>Reading Speed:</li>
+          <li></li>
         </ul>
       </div>
     </>
