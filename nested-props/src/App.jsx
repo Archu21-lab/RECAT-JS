@@ -1,13 +1,13 @@
-import React from 'react'
-
+import React from "react";
+import Navbar from "./components/navbar";
+import Home from "./screens/home";
 export default function App() {
+  const appName = "UserInfo App";
   return (
     <>
-    
-    <Navbar/>
+      <Navbar name={appName}/>
 
-    <Home/>
-    
+      <Home name={appName} />
     </>
-  )
+  );
 }

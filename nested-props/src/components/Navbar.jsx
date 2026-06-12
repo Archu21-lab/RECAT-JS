@@ -1,8 +1,10 @@
 import React from 'react'
 
-export default function Navbar() {
+export default function Navbar({name}) {
   return (
-    <div></div>
+    <div>
+      <h1>{name}</h1>
+    </div>
   )
 }
 

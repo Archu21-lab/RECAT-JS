@@ -1,11 +1,10 @@
+import React from "react";
+import Input from "../components/input";
 
-import React from 'react'
-
-export default function Home() {
+export default function Home({ name }) {
   return (
     <div>
-
-        <Input/>
+      <Input appName={name} />
     </div>
-  )
+  );
 }
