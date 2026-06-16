@@ -1,8 +1,17 @@
+import React from "react";
 
-import React from 'react'
-
-export default function Display() {
+export default function Display(app, name,setName) {
   return (
-    <div>Display</div>
-  )
+    <div>
+      display 
+      <p>
+        <h3>{app}</h3>
+        {name}- <button onClick={()=>{
+          setName("")
+        }}>Clear</button>
+
+      </p>
+      
+    </div>
+  );
 }
