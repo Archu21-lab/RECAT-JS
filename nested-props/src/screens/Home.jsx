@@ -1,10 +1,10 @@
 import React from "react";
 import Input from "../components/input";
 
-export default function Home({ name }) {
+export default function Home() {
   return (
     <div>
-      <Input appName={name} />
+    
     </div>
   );
 }
