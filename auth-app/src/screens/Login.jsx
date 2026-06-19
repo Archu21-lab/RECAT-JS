@@ -11,12 +11,18 @@ export default function Login({ credential }) {
     setUser({ ...user, password: e.target.value });
   };
 
+  const getName = (e) => {
+    setUser({ ...user, name: e.target.value });
+  };
+
   const handleLogin = () => {
     if (
       user.email == credential.email ||
       user.password == credential.password
     ) {
-      navigate("/home");
+      localStorage.setItem("email", user.email);
+      localStorage.setItem("password", user.password);
+      navigate("/home", { state: user });
     } else {
       alert("Email or Password Wrong");
     }
@@ -25,6 +31,9 @@ export default function Login({ credential }) {
     <>
       <div>
         <h1>Login</h1>
+      </div>
+      <div>
+        <input onChange={getName} type="text" placeholder="Enter Name" />
       </div>
       <div>
         <input onChange={getEmail} type="text" placeholder="Enter Email" />
