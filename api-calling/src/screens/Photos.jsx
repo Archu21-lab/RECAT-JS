@@ -3,10 +3,13 @@ import axios from "axios";
 
 export default function Photos() {
   const [products, setProducts] = useState([]);
+  const [store, setStore] = useState([]);
   const [Search, setSearch] = useState("");
+
   const handleFetchPhotos = async () => {
     const res = await axios.get("https://dummyjson.com/products");
     setProducts(res.data.products);
+    setStore(res.data.products);
   };
 
   const getSearch = (e) => {
@@ -23,6 +26,24 @@ export default function Photos() {
     );
   };
 
+  const handleCategoryFilter = (e) => {
+    setProducts(store);
+    if (e.target.value == "all") {
+      setProducts(store);
+    } else {
+      setProducts(
+       store.filter((product) => product.category == e.target.value),
+      );
+    }
+  };
+
+  const handlePriceFilter = (e) => {
+    console.log(e.target.value);
+    setProducts(
+      store.filter((product) => product.price >= Number(e.target.value)),
+    );
+  };
+
   useEffect(() => {
     handleFetchPhotos();
   }, []);
@@ -33,6 +54,21 @@ export default function Photos() {
         <button onClick={handleSearch} className="m-2 btn btn-primary">
           Search
         </button>
+        <select className="fw-bold" onChange={handleCategoryFilter}>
+          <option value={"all"}>All</option>
+          <option value={"beauty"}>Beauty</option>
+          <option value={"fragrances"}>Fragrances</option>
+          <option value={"furniture"}>Furniture</option>
+          <option value={"groceries"}>Groceries</option>
+        </select>
+        <span className="fw-bold fs-5 m-2">Price</span>
+        <input
+          className="m-1"
+          onChange={handlePriceFilter}
+          type="range"
+          min={1}
+          max={2500}
+        />
         <button onClick={handleSearch} className="m-2 btn btn-primary">
           {" "}
           Clear Filter
