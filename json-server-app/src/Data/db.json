@@ -1,10 +1,3 @@
 {
-    "users":[
-        {
-            "name":"bharat"
-        }
-    ],
-    "products":{
-        "new":[]
-    }
+  "users":[]
 }
