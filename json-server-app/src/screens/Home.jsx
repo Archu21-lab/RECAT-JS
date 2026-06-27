@@ -7,19 +7,29 @@ export default function Home() {
 
   const getName = (e) => setData({ ...data, name: e.target.value });
   const getRole = (e) => setData({ ...data, role: e.target.value });
+  const updateField = (x) => setData(x);
 
   const handleSetUsers = async () => {
     const res = await axios.post("http://localhost:3000/users", data);
-   if(res.status==201){
-    alert("users Inserted Successfully !")
-   }else{
-    alert("can't Add User !")
-   }
+    if (res.status == 201) {
+      alert("users Inserted Successfully !");
+    } else {
+      alert("can't Add User !");
+    }
+  };
+  const handleUpdateUser = async () => {
+    const res = await axios.put("http://localhost:3000/users/" + data.id, data);
+    handleFetchUsers();
   };
 
   const handleFetchUsers = async () => {
     const res = await axios.get("http://localhost:3000/users");
     setUsers(res.data);
+  };
+
+  const handleDeleteUser = async (id) => {
+    const res = await axios.delete("http://localhost:3000/users/" + id);
+    handleFetchUsers();
   };
 
   useEffect(() => {
@@ -28,24 +38,45 @@ export default function Home() {
 
   return (
     <div>
-      <input onChange={getName} type="text" placeholder="Enter Name" />
-      <input onChange={getRole} type="text" placeholder="Enter Role" />
+      <input
+        value={data.name}
+        onChange={getName}
+        type="text"
+        placeholder="Enter Name"
+      />
+      <input
+        value={data.role}
+        onChange={getRole}
+        type="text"
+        placeholder="Enter Role"
+      />
       <button
-        onClick={async() => {
-        await  handleSetUsers();
-         await handleFetchUsers();
+        onClick={async () => {
+          await handleSetUsers();
+          await handleFetchUsers();
         }}
       >
         Submit
       </button>
+      <button onClick={handleUpdateUser}>Update</button>
       <div>
         {users.length == 0 ? (
           <p>No Users</p>
         ) : (
           users.map((user, i) => {
-           return( <div key={i}>
-              <p>{user.name}</p>
-            </div>)
+            return (
+              <div
+                key={i}
+                onClick={() => {
+                  updateField(user);
+                }}
+                onDoubleClick={() => {
+                  handleDeleteUser(user.id);
+                }}
+              >
+                <p>{user.name}</p>
+              </div>
+            );
           })
         )}
       </div>

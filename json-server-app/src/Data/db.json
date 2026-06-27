@@ -1,54 +1,19 @@
 {
   "users": [
     {
-      "name": "archana",
-      "role": "IT",
-      "id": "LXK40WYplcE"
-    },
-    {
       "name": "avinash",
       "role": "IT",
       "id": "20yqOALfXxY"
     },
     {
-      "name": "archana ",
-      "role": "it",
-      "id": "0cV19uzVArw"
+      "name": "avinash",
+      "role": "IT",
+      "id": "Lec6Kru9Pbs"
     },
     {
-      "name": "rahul",
-      "role": "job",
-      "id": "Of8HAIJ6gQ4"
-    },
-    {
-      "name": "rahul",
-      "role": "job",
-      "id": "A7gRDXm_0cY"
-    },
-    {
-      "name": "archana",
-      "role": "developer",
-      "id": "PEwaxWlliAg"
-    },
-    {
-      "name": "archana",
-      "role": "developer",
-      "id": "Heledl4PnFI"
-    },
-    {
-      "name": "archana",
-      "role": "developer",
-      "id": "qCGexiM26VI"
-    },
-    {
-      "name": "a",
-      "role": "a",
-      "id": "YiL6sMVwQr8"
-    },
-    {
-      "name": "archu",
-      "role": "archu",
-      "id": "J66dMZEtBuo"
+      "name": "avil",
+      "role": "pati",
+      "id": "xx87unjNfBs"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
