@@ -282,7 +282,7 @@
 //multiple array k under array aa rha hain to usko ek array mein merge krne k liye flat(infinity) likhna chahiye
 //(from) method se kuch bhi object ko array mein convert kr skte hain
 
-// console.log(Array.from({ name: "Hitesh" })); isme vo aapko sirf khali array hi return krega 
+// console.log(Array.from({ name: "Hitesh" })); isme vo aapko sirf khali array hi return krega
 
 //Array.of krenge to usme sabhi variables ki value ek  array mein ek  jagah pe merge ho jaynge
 
@@ -291,3 +291,34 @@
 // let score3 =300
 
 // console.log(Array.of(score1,score2,score3))
+
+//symbol ko object key value pair mein declare krne k liye just example
+//const mysym = symbol("key1")
+
+const object = {
+  name: archana,
+  [mysym]: "mykey1",
+  "full name": "archana patil",
+};
+
+//aur jab hum object k name value mein jane tak object.name likhte hain vaise nahi likhna hain hume usko
+//console.log(object["name"]) ese hi syntax mein likho abhi full name ko agar object.full name kr k output layenge to vo ayega hi nhi 
+//uske liye hume console.log(object["full name"]) ese hi likhna padega
+//object.freeze () krne se vo value freeze ho jati hain aur change nhi hoti agar hum change kr to bi
+
+//jsuser.greeting=function(){
+//     console.log("hello js user")
+// }
+
+//jsuser.greetings2 = function(){
+
+//     console.log(`hello js user ${this.name}`);
+
+// }
+
+// isme agar hum output dekho to greetings 2 vale mein us note k sath sath object ki bhi value access hoti hain
+
+// const tinderUser = new Object() singletoneobject
+// const tinderUser = {} nonsingletone object hain 
+// 2 object ko combine krne k liye Object.assign({},obj1,obj2)iske under ye {}
+//usko result object k under object hi aaye
