@@ -282,7 +282,8 @@
 //multiple array k under array aa rha hain to usko ek array mein merge krne k liye flat(infinity) likhna chahiye
 //(from) method se kuch bhi object ko array mein convert kr skte hain
 
-// console.log(Array.from({ name: "Hitesh" })); isme vo aapko sirf khali array hi return krega
+//  isme vo aapko sirf khali array hi return krega
+console.log(Array.from({ name: "Hitesh" }));
 
 //Array.of krenge to usme sabhi variables ki value ek  array mein ek  jagah pe merge ho jaynge
 
@@ -295,11 +296,11 @@
 //symbol ko object key value pair mein declare krne k liye just example
 //const mysym = symbol("key1")
 
-const object = {
-  name: archana,
-  [mysym]: "mykey1",
-  "full name": "archana patil",
-};
+// const object = {
+//   name: archana,
+//   [mysym]: "mykey1",
+//   "full name": "archana patil",
+// };
 
 //aur jab hum object k name value mein jane tak object.name likhte hain vaise nahi likhna hain hume usko
 //console.log(object["name"]) ese hi syntax mein likho abhi full name ko agar object.full name kr k output layenge to vo ayega hi nhi 
