@@ -323,3 +323,8 @@ console.log(Array.from({ name: "Hitesh" }));
 // const tinderUser = {} nonsingletone object hain 
 // 2 object ko combine krne k liye Object.assign({},obj1,obj2)iske under ye {}
 //usko result object k under object hi aaye
+// spread operator (...obj1 , ...obj2 )
+
+//agar uska value chahiye to likho 
+
+// console.log(Object.keys(usvariableknam)) to vo sab tumhe array k isme retun krta hain most important 
