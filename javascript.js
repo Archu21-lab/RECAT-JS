@@ -328,3 +328,5 @@ console.log(Array.from({ name: "Hitesh" }));
 //agar uska value chahiye to likho 
 
 // console.log(Object.keys(usvariableknam)) to vo sab tumhe array k isme retun krta hain most important 
+
+//object destructurized 
