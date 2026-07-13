@@ -1,187 +1,220 @@
 {
-  "books":
-[
-  {
-    "title": "The Echoes of Time",
-    "author": "Elena Rostova",
-    "category": "Science Fiction",
-    "price": 14.99
-  },
-  {
-    "title": "Silent Witness",
-    "author": "Marcus Vance",
-    "category": "Mystery",
-    "price": 9.99
-  },
-  {
-    "title": "The Mindset Shift",
-    "author": "Dr. Aris Thorne",
-    "category": "Self-Help",
-    "price": 21.50
-  },
-  {
-    "title": "Beneath the Canopy",
-    "author": "Sarah Jenkins",
-    "category": "Fiction",
-    "price": 12.95
-  },
-  {
-    "title": "Algorithms Unlocked",
-    "author": "David C. Park",
-    "category": "Technology",
-    "price": 45.00
-  },
-  {
-    "title": "A History of Shadows",
-    "author": "Julian Chevalier",
-    "category": "History",
-    "price": 18.99
-  },
-  {
-    "title": "The Alchemist's Daughter",
-    "author": "Maeve O'Connor",
-    "category": "Fantasy",
-    "price": 15.99
-  },
-  {
-    "title": "Gourmet Minimalism",
-    "author": "Chef Kenji Sato",
-    "category": "Cooking",
-    "price": 29.99
-  },
-  {
-    "title": "Starlight Odyssey",
-    "author": "Elena Rostova",
-    "category": "Science Fiction",
-    "price": 16.50
-  },
-  {
-    "title": "Chasing Daylight",
-    "author": "Chloe Mercer",
-    "category": "Romance",
-    "price": 8.99
-  },
-  {
-    "title": "The Quantum Paradox",
-    "author": "Dr. Alan Turingman",
-    "category": "Science Fiction",
-    "price": 13.99
-  },
-  {
-    "title": "Murder at Midnight",
-    "author": "Marcus Vance",
-    "category": "Mystery",
-    "price": 11.25
-  },
-  {
-    "title": "Atomic Habits Explained",
-    "author": "James Clearfield",
-    "category": "Self-Help",
-    "price": 19.99
-  },
-  {
-    "title": "Whispers of the Wind",
-    "author": "Sarah Jenkins",
-    "category": "Fiction",
-    "price": 14.00
-  },
-  {
-    "title": "Mastering React & Next.js",
-    "author": "David C. Park",
-    "category": "Technology",
-    "price": 39.99
-  },
-  {
-    "title": "Empires of Sand",
-    "author": "Julian Chevalier",
-    "category": "History",
-    "price": 22.50
-  },
-  {
-    "title": "The Dragon's Legacy",
-    "author": "Maeve O'Connor",
-    "category": "Fantasy",
-    "price": 17.99
-  },
-  {
-    "title": "Baking with Passion",
-    "author": "Chef Kenji Sato",
-    "category": "Cooking",
-    "price": 24.95
-  },
-  {
-    "title": "Summer in Tuscany",
-    "author": "Chloe Mercer",
-    "category": "Romance",
-    "price": 9.50
-  },
-  {
-    "title": "The Last Cyberpunk",
-    "author": "Elena Rostova",
-    "category": "Science Fiction",
-    "price": 15.00
-  },
-  {
-    "title": "The Cipher Code",
-    "author": "Marcus Vance",
-    "category": "Mystery",
-    "price": 12.99
-  },
-  {
-    "title": "Focus Forward",
-    "author": "Dr. Aris Thorne",
-    "category": "Self-Help",
-    "price": 16.99
-  },
-  {
-    "title": "The Lost Symphony",
-    "author": "Sarah Jenkins",
-    "category": "Fiction",
-    "price": 13.50
-  },
-  {
-    "title": "Introduction to AI Art",
-    "author": "David C. Park",
-    "category": "Technology",
-    "price": 34.99
-  },
-  {
-    "title": "The Silk Road Revisited",
-    "author": "Julian Chevalier",
-    "category": "History",
-    "price": 26.00
-  },
-  {
-    "title": "Chronicles of Eldoria",
-    "author": "Maeve O'Connor",
-    "category": "Fantasy",
-    "price": 14.95
-  },
-  {
-    "title": "The Urban Forager",
-    "author": "Chef Kenji Sato",
-    "category": "Cooking",
-    "price": 27.99
-  },
-  {
-    "title": "Love on the Airwaves",
-    "author": "Chloe Mercer",
-    "category": "Romance",
-    "price": 7.99
-  },
-  {
-    "title": "Neural Networks Simplified",
-    "author": "David C. Park",
-    "category": "Technology",
-    "price": 49.99
-  },
-  {
-    "title": "The Midnight Library Thief",
-    "author": "Marcus Vance",
-    "category": "Mystery",
-    "price": 10.99
-  }
-],
-
+  "books": [
+    {
+      "title": "The Echoes of Time",
+      "author": "Elena Rostova",
+      "category": "Science Fiction",
+      "price": 14.99,
+      "id": "7dHtlzXxee8"
+    },
+    {
+      "title": "Silent Witness",
+      "author": "Marcus Vance",
+      "category": "Mystery",
+      "price": 9.99,
+      "id": "7vqyOAB7bKk"
+    },
+    {
+      "title": "The Mindset Shift",
+      "author": "Dr. Aris Thorne",
+      "category": "Self-Help",
+      "price": 21.5,
+      "id": "xJKKYH2EnyQ"
+    },
+    {
+      "title": "Beneath the Canopy",
+      "author": "Sarah Jenkins",
+      "category": "Fiction",
+      "price": 12.95,
+      "id": "MQMeDv81hq0"
+    },
+    {
+      "title": "Algorithms Unlocked",
+      "author": "David C. Park",
+      "category": "Technology",
+      "price": 45,
+      "id": "Ssw1Ou8sd6M"
+    },
+    {
+      "title": "A History of Shadows",
+      "author": "Julian Chevalier",
+      "category": "History",
+      "price": 18.99,
+      "id": "tByTRVCT2TI"
+    },
+    {
+      "title": "The Alchemist's Daughter",
+      "author": "Maeve O'Connor",
+      "category": "Fantasy",
+      "price": 15.99,
+      "id": "HK1rPVTgQDg"
+    },
+    {
+      "title": "Gourmet Minimalism",
+      "author": "Chef Kenji Sato",
+      "category": "Cooking",
+      "price": 29.99,
+      "id": "mUM08se6ZGc"
+    },
+    {
+      "title": "Starlight Odyssey",
+      "author": "Elena Rostova",
+      "category": "Science Fiction",
+      "price": 16.5,
+      "id": "BOUawW1jETg"
+    },
+    {
+      "title": "Chasing Daylight",
+      "author": "Chloe Mercer",
+      "category": "Romance",
+      "price": 8.99,
+      "id": "roi2hanNHtc"
+    },
+    {
+      "title": "The Quantum Paradox",
+      "author": "Dr. Alan Turingman",
+      "category": "Science Fiction",
+      "price": 13.99,
+      "id": "IXX66k3TI9Y"
+    },
+    {
+      "title": "Murder at Midnight",
+      "author": "Marcus Vance",
+      "category": "Mystery",
+      "price": 11.25,
+      "id": "BRQgYZJefaI"
+    },
+    {
+      "title": "Atomic Habits Explained",
+      "author": "James Clearfield",
+      "category": "Self-Help",
+      "price": 19.99,
+      "id": "OalXG8wfXmI"
+    },
+    {
+      "title": "Whispers of the Wind",
+      "author": "Sarah Jenkins",
+      "category": "Fiction",
+      "price": 14,
+      "id": "dO3P3owevrY"
+    },
+    {
+      "title": "Mastering React & Next.js",
+      "author": "David C. Park",
+      "category": "Technology",
+      "price": 39.99,
+      "id": "9NIhdfnsy04"
+    },
+    {
+      "title": "Empires of Sand",
+      "author": "Julian Chevalier",
+      "category": "History",
+      "price": 22.5,
+      "id": "-q_-VQj1n64"
+    },
+    {
+      "title": "The Dragon's Legacy",
+      "author": "Maeve O'Connor",
+      "category": "Fantasy",
+      "price": 17.99,
+      "id": "yeXOBaJ3sSo"
+    },
+    {
+      "title": "Baking with Passion",
+      "author": "Chef Kenji Sato",
+      "category": "Cooking",
+      "price": 24.95,
+      "id": "7rDaSB_58-Y"
+    },
+    {
+      "title": "Summer in Tuscany",
+      "author": "Chloe Mercer",
+      "category": "Romance",
+      "price": 9.5,
+      "id": "UpKXnx1haKY"
+    },
+    {
+      "title": "The Last Cyberpunk",
+      "author": "Elena Rostova",
+      "category": "Science Fiction",
+      "price": 15,
+      "id": "T2Ut-mDfCQM"
+    },
+    {
+      "title": "The Cipher Code",
+      "author": "Marcus Vance",
+      "category": "Mystery",
+      "price": 12.99,
+      "id": "o42UhKG-RNc"
+    },
+    {
+      "title": "Focus Forward",
+      "author": "Dr. Aris Thorne",
+      "category": "Self-Help",
+      "price": 16.99,
+      "id": "zJJVOfPmrz4"
+    },
+    {
+      "title": "The Lost Symphony",
+      "author": "Sarah Jenkins",
+      "category": "Fiction",
+      "price": 13.5,
+      "id": "Xc_IRfEBSeQ"
+    },
+    {
+      "title": "Introduction to AI Art",
+      "author": "David C. Park",
+      "category": "Technology",
+      "price": 34.99,
+      "id": "qNv7uHAiMt8"
+    },
+    {
+      "title": "The Silk Road Revisited",
+      "author": "Julian Chevalier",
+      "category": "History",
+      "price": 26,
+      "id": "qRYdD81YRBk"
+    },
+    {
+      "title": "Chronicles of Eldoria",
+      "author": "Maeve O'Connor",
+      "category": "Fantasy",
+      "price": 14.95,
+      "id": "9ZwclfnhO7o"
+    },
+    {
+      "title": "The Urban Forager",
+      "author": "Chef Kenji Sato",
+      "category": "Cooking",
+      "price": 27.99,
+      "id": "cBf3SbE5xkI"
+    },
+    {
+      "title": "Love on the Airwaves",
+      "author": "Chloe Mercer",
+      "category": "Romance",
+      "price": 7.99,
+      "id": "dhe3ufbGrxw"
+    },
+    {
+      "title": "Neural Networks Simplified",
+      "author": "David C. Park",
+      "category": "Technology",
+      "price": 49.99,
+      "id": "7X5OpJ4bUXU"
+    },
+    {
+      "title": "The Midnight Library Thief",
+      "author": "Marcus Vance",
+      "category": "Mystery",
+      "price": 10.99,
+      "id": "6TZwo1F8_cs"
+    },
+    {
+      "title": "America",
+      "author": "Captain",
+      "id": "RgEgNOAfEVE"
+    }
+  ],
   "$schema": "./node_modules/json-server/schema.json"
 }
