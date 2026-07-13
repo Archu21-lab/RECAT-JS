@@ -1,81 +1,187 @@
 {
-  "books": [
-    {
-      "id": "1",
-      "title": "Vision",
-      "author": "Wanda Vision"
-    },
-    {
-      "id": "gs2xv_aLgMI"
-    },
-    {
-      "id": "B_DgWrgxTHg"
-    },
-    {
-      "id": "CyzkcVtWUas"
-    },
-    {
-      "title": "",
-      "id": "irSxehUWpfA"
-    },
-    {
-      "title": "",
-      "id": "O0aaJ8_7sJA"
-    },
-    {
-      "title": "America",
-      "id": "Ogo9M3z_mCw"
-    },
-    {
-      "title": "America",
-      "author": "",
-      "id": "sVauSsEJMBY"
-    },
-    {
-      "title": "America",
-      "author": "captain",
-      "id": "obZG9swhZdU"
-    },
-    {
-      "title": "America",
-      "author": "aptain",
-      "id": "ITM5jgBL79I"
-    },
-    {
-      "title": "America",
-      "author": "Captain",
-      "id": "nHUGxLXDUJ0"
-    },
-    {
-      "title": "America",
-      "author": "Captain",
-      "id": "iwxeZ1Fe930"
-    },
-    {
-      "title": "America",
-      "author": "Captain",
-      "id": "qkvxcClgefI"
-    },
-    {
-      "title": "America",
-      "author": "Captain",
-      "id": "aExPMdwSwpY"
-    },
-    {
-      "title": "America",
-      "author": "Captain",
-      "id": "hJ8pjeyQ7rY"
-    },
-    {
-      "title": "America",
-      "author": "Captain",
-      "id": "tBNFocBx_zo"
-    },
-    {
-      "title": "America",
-      "author": "Captain",
-      "id": "-EuO-GQdEp4"
-    }
-  ],
+  "books":
+[
+  {
+    "title": "The Echoes of Time",
+    "author": "Elena Rostova",
+    "category": "Science Fiction",
+    "price": 14.99
+  },
+  {
+    "title": "Silent Witness",
+    "author": "Marcus Vance",
+    "category": "Mystery",
+    "price": 9.99
+  },
+  {
+    "title": "The Mindset Shift",
+    "author": "Dr. Aris Thorne",
+    "category": "Self-Help",
+    "price": 21.50
+  },
+  {
+    "title": "Beneath the Canopy",
+    "author": "Sarah Jenkins",
+    "category": "Fiction",
+    "price": 12.95
+  },
+  {
+    "title": "Algorithms Unlocked",
+    "author": "David C. Park",
+    "category": "Technology",
+    "price": 45.00
+  },
+  {
+    "title": "A History of Shadows",
+    "author": "Julian Chevalier",
+    "category": "History",
+    "price": 18.99
+  },
+  {
+    "title": "The Alchemist's Daughter",
+    "author": "Maeve O'Connor",
+    "category": "Fantasy",
+    "price": 15.99
+  },
+  {
+    "title": "Gourmet Minimalism",
+    "author": "Chef Kenji Sato",
+    "category": "Cooking",
+    "price": 29.99
+  },
+  {
+    "title": "Starlight Odyssey",
+    "author": "Elena Rostova",
+    "category": "Science Fiction",
+    "price": 16.50
+  },
+  {
+    "title": "Chasing Daylight",
+    "author": "Chloe Mercer",
+    "category": "Romance",
+    "price": 8.99
+  },
+  {
+    "title": "The Quantum Paradox",
+    "author": "Dr. Alan Turingman",
+    "category": "Science Fiction",
+    "price": 13.99
+  },
+  {
+    "title": "Murder at Midnight",
+    "author": "Marcus Vance",
+    "category": "Mystery",
+    "price": 11.25
+  },
+  {
+    "title": "Atomic Habits Explained",
+    "author": "James Clearfield",
+    "category": "Self-Help",
+    "price": 19.99
+  },
+  {
+    "title": "Whispers of the Wind",
+    "author": "Sarah Jenkins",
+    "category": "Fiction",
+    "price": 14.00
+  },
+  {
+    "title": "Mastering React & Next.js",
+    "author": "David C. Park",
+    "category": "Technology",
+    "price": 39.99
+  },
+  {
+    "title": "Empires of Sand",
+    "author": "Julian Chevalier",
+    "category": "History",
+    "price": 22.50
+  },
+  {
+    "title": "The Dragon's Legacy",
+    "author": "Maeve O'Connor",
+    "category": "Fantasy",
+    "price": 17.99
+  },
+  {
+    "title": "Baking with Passion",
+    "author": "Chef Kenji Sato",
+    "category": "Cooking",
+    "price": 24.95
+  },
+  {
+    "title": "Summer in Tuscany",
+    "author": "Chloe Mercer",
+    "category": "Romance",
+    "price": 9.50
+  },
+  {
+    "title": "The Last Cyberpunk",
+    "author": "Elena Rostova",
+    "category": "Science Fiction",
+    "price": 15.00
+  },
+  {
+    "title": "The Cipher Code",
+    "author": "Marcus Vance",
+    "category": "Mystery",
+    "price": 12.99
+  },
+  {
+    "title": "Focus Forward",
+    "author": "Dr. Aris Thorne",
+    "category": "Self-Help",
+    "price": 16.99
+  },
+  {
+    "title": "The Lost Symphony",
+    "author": "Sarah Jenkins",
+    "category": "Fiction",
+    "price": 13.50
+  },
+  {
+    "title": "Introduction to AI Art",
+    "author": "David C. Park",
+    "category": "Technology",
+    "price": 34.99
+  },
+  {
+    "title": "The Silk Road Revisited",
+    "author": "Julian Chevalier",
+    "category": "History",
+    "price": 26.00
+  },
+  {
+    "title": "Chronicles of Eldoria",
+    "author": "Maeve O'Connor",
+    "category": "Fantasy",
+    "price": 14.95
+  },
+  {
+    "title": "The Urban Forager",
+    "author": "Chef Kenji Sato",
+    "category": "Cooking",
+    "price": 27.99
+  },
+  {
+    "title": "Love on the Airwaves",
+    "author": "Chloe Mercer",
+    "category": "Romance",
+    "price": 7.99
+  },
+  {
+    "title": "Neural Networks Simplified",
+    "author": "David C. Park",
+    "category": "Technology",
+    "price": 49.99
+  },
+  {
+    "title": "The Midnight Library Thief",
+    "author": "Marcus Vance",
+    "category": "Mystery",
+    "price": 10.99
+  }
+],
+
   "$schema": "./node_modules/json-server/schema.json"
 }
