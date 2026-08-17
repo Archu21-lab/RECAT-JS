@@ -5,7 +5,7 @@ export default function Pagination({
     totalPages,
     setCurrentPage,
     totalItems,
-    itemsPerPage
+    itemsPerPage,
 }) {
     if (totalPages === 0) {
         return null;
@@ -20,51 +20,115 @@ export default function Pagination({
     );
 
     return (
-        <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
+        <div className="flex flex-col gap-4 border-t border-gray-100 bg-white px-4 py-4 sm:flex-row sm:items-center sm:justify-between">
 
-            <p className="text-sm text-gray-500">
-                Showing {start} - {end} of {totalItems}
-            </p>
+            {/* LEFT SIDE */}
 
-            <div className="flex gap-2">
+            <div className="text-sm text-gray-600">
+                Showing{" "}
+                <span className="font-semibold text-gray-900">
+                    {start}
+                </span>{" "}
+                to{" "}
+                <span className="font-semibold text-gray-900">
+                    {end}
+                </span>{" "}
+                of{" "}
+                <span className="font-semibold text-gray-900">
+                    {totalItems}
+                </span>{" "}
+                results
+            </div>
+
+
+            {/* RIGHT SIDE */}
+
+            <div className="flex items-center gap-1">
+
+                {/* PREVIOUS BUTTON */}
 
                 <button
+                    type="button"
                     disabled={currentPage === 1}
                     onClick={() =>
                         setCurrentPage(currentPage - 1)
                     }
-                    className="rounded-lg border px-4 py-2 disabled:cursor-not-allowed disabled:opacity-40"
+                    className="flex h-9 w-9 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-600 transition hover:bg-gray-100 disabled:pointer-events-none disabled:opacity-30"
                 >
-                    Previous
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth="2"
+                        stroke="currentColor"
+                        className="h-4 w-4"
+                    >
+                        <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M15.75 19.5L8.25 12l7.5-7.5"
+                        />
+                    </svg>
                 </button>
 
-                {Array.from(
-                    { length: totalPages },
-                    (_, index) => index + 1
-                ).map((page) => (
-                    <button
-                        key={page}
-                        onClick={() => setCurrentPage(page)}
-                        className={`rounded-lg px-4 py-2 ${currentPage === page
-                                ? "bg-blue-600 text-white"
-                                : "border bg-white"
+
+                {/* PAGE NUMBERS */}
+
+                <div className="flex items-center gap-1 px-1">
+
+                    {Array.from(
+                        { length: totalPages },
+                        (_, index) => index + 1
+                    ).map((page) => (
+
+                        <button
+                            type="button"
+                            key={page}
+                            onClick={() =>
+                                setCurrentPage(page)
+                            }
+                            className={`flex h-9 min-w-9 items-center justify-center rounded-full px-3 text-sm font-medium transition ${
+                                currentPage === page
+                                    ? "bg-gray-900 text-white"
+                                    : "text-gray-600 hover:bg-gray-100"
                             }`}
-                    >
-                        {page}
-                    </button>
-                ))}
+                        >
+                            {page}
+                        </button>
+
+                    ))}
+
+                </div>
+
+
+                {/* NEXT BUTTON */}
 
                 <button
+                    type="button"
                     disabled={currentPage === totalPages}
                     onClick={() =>
                         setCurrentPage(currentPage + 1)
                     }
-                    className="rounded-lg border px-4 py-2 disabled:cursor-not-allowed disabled:opacity-40"
+                    className="flex h-9 w-9 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-600 transition hover:bg-gray-100 disabled:pointer-events-none disabled:opacity-30"
                 >
-                    Next
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth="2"
+                        stroke="currentColor"
+                        className="h-4 w-4"
+                    >
+                        <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                        />
+                    </svg>
                 </button>
 
             </div>
+
         </div>
     );
 }
