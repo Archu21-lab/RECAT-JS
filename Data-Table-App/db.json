@@ -2,80 +2,52 @@
   "users": [
     {
       "id": "1",
-      "name": "Gaurav Kharate",
-      "email": "gaurav@example.com",
-      "phone": "9876543210",
+      "name": "archana patil",
+      "email": "archu@example.com",
+      "phone": "9876556710",
       "city": "Surat"
     },
     {
-      "id": "2",
-      "name": "Rahul Sharma",
-      "email": "rahul@example.com",
-      "phone": "9876543211",
-      "city": "Mumbai"
+      "name": "abhi arora",
+      "email": "abhi@example.com",
+      "phone": "9765237061",
+      "city": "Mumbai",
+      "id": "2"
     },
     {
       "id": "4",
-      "name": "Priya Shah",
-      "email": "priya@example.com",
-      "phone": "9876543213",
-      "city": "Vadodara"
-    },
-    {
-      "id": "5",
-      "name": "Neha Joshi",
-      "email": "neha@example.com",
-      "phone": "9876543214",
+      "name": "Riya Patil",
+      "email": "Riya@example.com",
+      "phone": "9022733675",
       "city": "Pune"
     },
     {
+      "id": "5",
+      "name": "isha Patel",
+      "email": "isha@example.com",
+      "phone": "8020234456",
+      "city": "nashik"
+    },
+    {
       "id": "6",
-      "name": "Vishal Mehta",
-      "email": "vishal@example.com",
-      "phone": "9876543215",
-      "city": "Rajkot"
+      "name": "jethalala gada",
+      "email": "jethalal@example.com",
+      "phone": "9798563295",
+      "city": "surat"
     },
     {
-      "name": "Sachin kharate",
-      "email": "sachinkharate2004@gmail.com",
+      "id": "7",
+      "name": "Kunal Patil",
+      "email": "kunal@gmail.com",
       "phone": "09309968779",
-      "city": "Surat",
-      "id": "6SDSdIZqN4I"
+      "city": "nagpur"
     },
     {
-      "name": "Sachin kharate",
-      "email": "sachinkharate2004@gmail.com",
-      "phone": "09309968779",
+      "name": "Archana Patil",
+      "email": "archupatil5958@gmail.com",
+      "phone": "687879898",
       "city": "Surat",
-      "id": "746yYjpcENA"
-    },
-    {
-      "name": "Sachin kharate",
-      "email": "sachinkharate2004@gmail.com",
-      "phone": "09309968779",
-      "city": "Surat",
-      "id": "vDI7L-hCbPs"
-    },
-    {
-      "name": "Sachin kharate",
-      "email": "sachinkharate2004@gmail.com",
-      "phone": "09309968779",
-      "city": "Surat",
-      "id": "rDmv1Imm8-E"
-    },
-    {
-      "name": "Sachin kharate",
-      "email": "sachinkharate2004@gmail.com",
-      "phone": "09309968779",
-      "city": "Surat",
-      "id": "1andW2UDzTU"
-    },
-    {
-      "name": "Sachin kharate",
-      "email": "sachinkharate2004@gmail.com",
-      "phone": "09309968779",
-      "city": "Surat",
-      "id": "uMaqlY8E-WE"
+      "id": "gSeEpYQ9v10"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
