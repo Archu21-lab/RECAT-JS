@@ -1,36 +1,163 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📊 Data Table Management App
 
-## Getting Started
+A modern and responsive **User Data Management Dashboard** built with **Next.js, React, and Tailwind CSS**.
 
-First, run the development server:
+This project allows users to view, search, sort, add, edit, delete, and manage user information through a clean and professional data table interface.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+Project Video Link = https://drive.google.com/file/d/1jsrMgaN8NZdecnONWotXJdywYAOhqsO5/view?usp=sharing
+
+## 🚀 Project Overview
+
+The **Data Table Management App** is a CRUD-based dashboard designed to demonstrate how to manage data efficiently in a React/Next.js application.
+
+The application fetches user data from a REST API and provides an interactive table with features such as:
+
+- 🔍 Search users
+- ↕️ Sort users
+- 👁️ View user details
+- ✏️ Edit user information
+- 🗑️ Delete users
+- ➕ Add new users
+- 📄 Pagination
+- ✅ Form validation
+- 🔄 API integration
+- 📱 Responsive UI
+
+---
+
+## ✨ Features
+
+### 👥 User Management
+
+Users can:
+
+- Add a new user
+- View user details
+- Edit existing users
+- Delete users
+- View all users in a structured table
+
+---
+
+### 🔍 Search
+
+The search functionality allows users to search by:
+
+- Name
+- Email
+- Phone
+- City
+
+Search results update dynamically as the user types.
+
+---
+
+### ↕️ Sorting
+
+Users can sort the table data by:
+
+- Name
+- Email
+
+Sorting supports:
+
+- Ascending order
+- Descending order
+
+---
+
+### 📄 Pagination
+
+The application divides users into multiple pages to make large datasets easier to manage.
+
+Pagination includes:
+
+- Previous button
+- Next button
+- Page numbers
+- Total results count
+- Current result range
+
+---
+
+### 📝 Add & Edit User
+
+A reusable form is used for both creating and updating users.
+
+The form includes:
+
+- Name
+- Email
+- Phone
+- City
+
+Form validation is also implemented to prevent invalid or empty data.
+
+---
+
+### 🗑️ Delete User
+
+Users can be deleted directly from the table.
+
+Before deleting a user, the application displays a confirmation message.
+
+---
+
+### 🎨 Modern UI
+
+The project uses a clean and responsive dashboard design with:
+
+- Tailwind CSS
+- Responsive table
+- Modal forms
+- Icon-based actions
+- User avatars
+- Hover effects
+- Empty states
+- Responsive layouts
+
+---
+
+## 🛠️ Technologies Used
+
+| Technology   | Purpose            |
+| ------------ | ------------------ |
+| Next.js      | React framework    |
+| React.js     | UI development     |
+| JavaScript   | Application logic  |
+| Tailwind CSS | Styling            |
+| REST API     | Data communication |
+| JSON Server  | Local backend/API  |
+| Fetch API    | HTTP requests      |
+
+---
+
+## 📂 Project Structure
+
+```text
+Data-Table-App/
+│
+├── app/
+│   ├── components/
+│   │   ├── DataTable.jsx
+│   │   ├── SearchBar.jsx
+│   │   ├── UserTable.jsx
+│   │   ├── UserForm.jsx
+│   │   ├── Pagination.jsx
+│   │   └── UserViewModal.jsx
+│   │
+│   ├── page.jsx
+│   └── layout.jsx
+│
+├── public/
+│
+├── db.json
+│
+├── package.json
+│
+├── next.config.mjs
+│
+└── README.md
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
